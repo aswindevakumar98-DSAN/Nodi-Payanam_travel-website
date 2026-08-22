@@ -885,29 +885,47 @@ select {
     /* Header */
 
     .header-content {
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        width: 100%;
+
+        gap: 10px;
+
         min-height: auto;
 
-        padding: 15px 0;
+        padding: 10px;
+    }
+    
+    .header-search{
+        display: flex;
+
+        font-size: 14px;
+
+        flex-grow: 1;
+
+        width: auto;
     }
 
     .logo {
-        font-size: 24px;
-    }
+        display: flex;
 
-    .navbar {
-        width: 100%;
+        font-size: 14px;
+        
+        flex-shrink: 0;
     }
 
     .nav-list {
-        justify-content: center;
-
-        gap: 15px;
-
-        flex-wrap: wrap;
+        display: none;
     }
 
     .nav-list a {
-        font-size: 13px;
+        display: none;
     }
 
 
